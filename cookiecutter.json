@@ -1,0 +1,10 @@
+{
+  "project_name": "",
+  "project_description": "",
+  "author_name": "Manuel Konrad",
+  "author_github": "manuelkonrad",
+  "author_email": "",
+  "__project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-')|replace('_', '-') }}",
+  "__package_name": "{{ cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_') }}",
+  "__year": "{% now 'utc', '%Y' %}"
+}
