@@ -1,14 +1,12 @@
 name: tests
 
 on:
-  # pull_request:
-  #   branches:
-  #   - main
-  #   - develop
-  # push:
-  #   branches:
-  #   - main
-  #   - develop
+  pull_request:
+    branches:
+    - main
+  push:
+    branches:
+    - main
   workflow_dispatch:
 
 jobs:
@@ -22,4 +20,4 @@ jobs:
     - name: Run linter and formatter checks
       run: hatch fmt --check
     - name: Run tests
-      run: hatch test
+      run: hatch test --all
